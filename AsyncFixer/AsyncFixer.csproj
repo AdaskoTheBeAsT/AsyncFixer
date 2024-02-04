@@ -8,12 +8,12 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>AsyncFixer</PackageId>
-    <PackageVersion>1.6.0</PackageVersion>
+    <PackageId>AdaskoTheBeAsT.AsyncFixer</PackageId>
+    <PackageVersion>1.6.0.1</PackageVersion>
     <Authors>Semih Okur</Authors>
     <Title>AsyncFixer: Advanced async/await Diagnostics and CodeFixes for C#</Title>
     <Description>
-	    AsyncFixer helps developers in finding and correcting common async/await misuses (i.e., anti-patterns). It currently detects 5 common kinds of async/await misuses and fixes 3 of them via program transformations. AsyncFixer has been tested with thousands of open-source C# projects and successfully handles many corner cases.
+	    AsyncFixer helps developers in finding and correcting common async/await misuses (i.e., anti-patterns). It currently detects 5 common kinds of async/await misuses and fixes 3 of them via program transformations. AsyncFixer has been tested with thousands of open-source C# projects and successfully handles many corner cases. This version contains all the dependencies upgraded.
     </Description>
 	<PackageReleaseNotes>https://github.com/semihokur/AsyncFixer/blob/main/CHANGELOG.md</PackageReleaseNotes> 
 	<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
@@ -28,8 +28,8 @@
   </PropertyGroup>
 	
   <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis" Version="3.11.0" />
-    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.3" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis" Version="4.8.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.11.0-beta1.23525.2" PrivateAssets="all" />
   </ItemGroup>
 
   <ItemGroup>
