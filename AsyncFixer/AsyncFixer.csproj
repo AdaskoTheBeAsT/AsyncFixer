@@ -9,7 +9,7 @@
 
   <PropertyGroup>
     <PackageId>AdaskoTheBeAsT.AsyncFixer</PackageId>
-    <PackageVersion>1.6.0.1</PackageVersion>
+    <PackageVersion>1.6.0.2</PackageVersion>
     <Authors>Semih Okur</Authors>
     <Title>AsyncFixer: Advanced async/await Diagnostics and CodeFixes for C#</Title>
     <Description>
