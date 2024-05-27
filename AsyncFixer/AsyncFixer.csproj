@@ -9,7 +9,7 @@
 
   <PropertyGroup>
     <PackageId>AdaskoTheBeAsT.AsyncFixer</PackageId>
-    <PackageVersion>1.6.0.4</PackageVersion>
+    <PackageVersion>1.6.0.5</PackageVersion>
     <Authors>Semih Okur</Authors>
     <Title>AsyncFixer: Advanced async/await Diagnostics and CodeFixes for C#</Title>
     <Description>
@@ -25,6 +25,7 @@
     <PackageTags>asyncfixer analyzers async/await asynchronous concurrency diagnostics codefix roslyn codeanalysis async await</PackageTags>
     <NoPackageAnalysis>false</NoPackageAnalysis>
 	<DevelopmentDependency>true</DevelopmentDependency>
+    <PackageReadmeFile>README.MD</PackageReadmeFile>
   </PropertyGroup>
 	
   <ItemGroup>
@@ -45,6 +46,7 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+    <None Include="..\README.MD" Pack="true" PackagePath="\"/>
   </ItemGroup>
 
 </Project>
