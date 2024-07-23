@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Immutable;
-using System.Diagnostics.Contracts;
 using System.Linq;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
@@ -85,7 +84,7 @@ namespace AsyncFixer.AsyncCallInsideUsingBlock
                 }
 
                 // Check whether the async call will be synchronously waited.
-                bool isInvocationWaited = false;
+                var isInvocationWaited = false;
 
                 foreach (var parent in invocation.Ancestors())
                 {

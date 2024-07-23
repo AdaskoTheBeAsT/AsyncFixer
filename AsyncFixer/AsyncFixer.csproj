@@ -5,11 +5,12 @@
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	<SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+	<EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
   </PropertyGroup>
 
   <PropertyGroup>
     <PackageId>AdaskoTheBeAsT.AsyncFixer</PackageId>
-    <PackageVersion>1.6.0.6</PackageVersion>
+    <PackageVersion>1.6.0.10</PackageVersion>
     <Authors>Semih Okur</Authors>
     <Title>AsyncFixer: Advanced async/await Diagnostics and CodeFixes for C#</Title>
     <Description>
@@ -29,8 +30,8 @@
   </PropertyGroup>
 	
   <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis" Version="4.9.2" />
-    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.11.0-beta1.24219.2" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis" Version="4.10.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.11.0-beta1.24318.1" PrivateAssets="all" />
   </ItemGroup>
 
   <ItemGroup>

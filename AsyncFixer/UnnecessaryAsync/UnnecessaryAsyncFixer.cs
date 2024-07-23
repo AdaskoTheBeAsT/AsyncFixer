@@ -113,7 +113,7 @@ namespace AsyncFixer.UnnecessaryAsync
                 }
             }
 
-            MethodDeclarationSyntax newMethodDecl = methodDecl.ReplaceAll(pairs);
+            var newMethodDecl = methodDecl.ReplaceAll(pairs);
 
             // Remove async keyword
             var asyncModifier = newMethodDecl.Modifiers.First(a => a.Kind() == SyntaxKind.AsyncKeyword);
