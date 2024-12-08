@@ -10,7 +10,7 @@
 
   <PropertyGroup>
     <PackageId>AdaskoTheBeAsT.AsyncFixer</PackageId>
-    <PackageVersion>1.6.0.11</PackageVersion>
+    <PackageVersion>1.6.0.12</PackageVersion>
     <Authors>Semih Okur</Authors>
     <Title>AsyncFixer: Advanced async/await Diagnostics and CodeFixes for C#</Title>
     <Description>
@@ -30,8 +30,10 @@
   </PropertyGroup>
 	
   <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis" Version="4.11.0" />
-    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.11.0-beta1.24318.1" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.11.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.12.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.12.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.12.0" PrivateAssets="all" />
   </ItemGroup>
 
   <ItemGroup>
@@ -42,7 +44,7 @@
   <ItemGroup>
     <None Update="tools\*.ps1" CopyToOutputDirectory="Always" Pack="true" PackagePath="" />
     <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
-	  <None Include="$(OutputPath)\$(AssemblyName).pdb" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+	<None Include="$(OutputPath)\$(AssemblyName).pdb" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
     <None Include="..\AsyncFixer.Vsix\icon.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
