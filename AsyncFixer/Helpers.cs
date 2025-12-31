@@ -215,7 +215,7 @@ namespace AsyncFixer
             var dataFlowResult = semanticModel.AnalyzeDataFlow(node);
             if (dataFlowResult?.Succeeded == true)
             {
-                foreach (ISymbol symbol in dataFlowResult.ReadInside)
+                foreach (var symbol in dataFlowResult.ReadInside)
                 {
                     yield return symbol.Name;
 

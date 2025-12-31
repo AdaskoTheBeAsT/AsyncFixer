@@ -1,9 +1,5 @@
-using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CodeFixes;
 using Microsoft.CodeAnalysis.Diagnostics;
 using TestHelper;
-using AsyncFixer.AsyncVoid;
-using AsyncFixer.AsyncCallInsideUsingBlock;
 using AsyncFixer.NestedTaskToOuterTask;
 using Xunit;
 

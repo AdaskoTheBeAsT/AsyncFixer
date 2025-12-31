@@ -13,6 +13,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncFixer.Samples", "Async
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncFixer2022.Vsix", "AsyncFixer2022.Vsix\AsyncFixer2022.Vsix.csproj", "{32E16283-1061-4DE2-9985-EC0443018982}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".props", ".props", "{EEF09D2F-B7D6-4F6B-B7A2-E802412EBCDC}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		AsyncFixer.sln.DotSettings.user = AsyncFixer.sln.DotSettings.user
+		CHANGELOG.md = CHANGELOG.md
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

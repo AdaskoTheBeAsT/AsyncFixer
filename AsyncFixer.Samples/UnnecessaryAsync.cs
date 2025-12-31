@@ -125,7 +125,7 @@ namespace AsyncFixer.Samples
 
         static async IAsyncEnumerable<int> RangeAsync(int start, int count)
         {
-            for (int i = 0; i < count; i++)
+            for (var i = 0; i < count; i++)
             {
                 await Task.Delay(i);
                 yield return start + i;

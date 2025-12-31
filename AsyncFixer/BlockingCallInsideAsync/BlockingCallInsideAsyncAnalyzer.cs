@@ -39,7 +39,7 @@ namespace AsyncFixer.BlockingCallInsideAsync
         private void AnalyzeMethodDeclaration(SyntaxNodeAnalysisContext context)
         {
             var method = (MethodDeclarationSyntax)context.Node;
-            string methodName = method.Identifier.ValueText;
+            var methodName = method.Identifier.ValueText;
 
             if (!method.IsAsync())
             {

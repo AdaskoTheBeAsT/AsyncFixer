@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -9,8 +9,8 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>AsyncFixer</PackageId>
-    <PackageVersion>2.1.0</PackageVersion>
+    <PackageId>AdaskoTheBeAsT.AsyncFixer</PackageId>
+    <PackageVersion>2.1.0.1</PackageVersion>
     <Authors>Semih Okur</Authors>
     <Title>AsyncFixer: Async/Await Analyzers and Code Fixes</Title>
     <Description>
@@ -20,20 +20,20 @@
 	<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
 	<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageProjectUrl>https://github.com/semihokur/AsyncFixer</PackageProjectUrl>
-    <PackageIcon>icon.png</PackageIcon>
+    <!--<PackageIcon>icon.png</PackageIcon>-->
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/semihokur/AsyncFixer</RepositoryUrl> 
     <Copyright>Copyright (c) AsyncFixer 2015-2026</Copyright>
     <PackageTags>asyncfixer csharp dotnet roslyn analyzer analyzers codefix codefixes codeanalysis async await asyncawait asynchronous diagnostics</PackageTags>
     <NoPackageAnalysis>false</NoPackageAnalysis>
 	<DevelopmentDependency>true</DevelopmentDependency>
+    <PackageReadmeFile>README.MD</PackageReadmeFile>
   </PropertyGroup>
 	
   <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.8.0" />
-    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.11.0" PrivateAssets="all" />
-  </ItemGroup>
-
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="5.0.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Cmmon" Version="5.0.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="5.0.0" PrivateAssets="all" />
   <PropertyGroup>
     <!-- RS1038: Analyzers should not reference Workspaces - suppressed because analyzers and code fixers are in the same assembly -->
     <NoWarn>$(NoWarn);RS1038</NoWarn>
@@ -52,7 +52,7 @@
   <ItemGroup>
     <None Update="tools\*.ps1" CopyToOutputDirectory="Always" Pack="true" PackagePath="" />
     <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
-	  <None Include="$(OutputPath)\$(AssemblyName).pdb" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+	<None Include="$(OutputPath)\$(AssemblyName).pdb" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
     <None Include="..\AsyncFixer2022.Vsix\icon.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
@@ -61,6 +61,7 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+    <None Include="..\README.MD" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>

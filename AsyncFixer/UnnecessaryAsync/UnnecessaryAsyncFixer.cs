@@ -99,7 +99,7 @@ namespace AsyncFixer.UnnecessaryAsync
                 CollectReplacementsFromBody(semanticModel, methodDecl.Body, pairs);
             }
 
-            MethodDeclarationSyntax newMethodDecl = methodDecl.ReplaceAll(pairs);
+            var newMethodDecl = methodDecl.ReplaceAll(pairs);
 
             // Remove async keyword
             var asyncModifier = newMethodDecl.Modifiers.First(a => a.IsKind(SyntaxKind.AsyncKeyword));
