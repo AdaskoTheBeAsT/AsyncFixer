@@ -10,7 +10,7 @@
 
   <PropertyGroup>
     <PackageId>AdaskoTheBeAsT.AsyncFixer</PackageId>
-    <PackageVersion>2.1.0.1</PackageVersion>
+    <PackageVersion>2.1.0.200</PackageVersion>
     <Authors>Semih Okur</Authors>
     <Title>AsyncFixer: Async/Await Analyzers and Code Fixes</Title>
     <Description>
@@ -30,9 +30,9 @@
   </PropertyGroup>
     
   <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="5.0.0" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="5.0.0" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="5.0.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="5.6.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="5.6.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="5.6.0" PrivateAssets="all" />
   </ItemGroup>
   <PropertyGroup>
     <!-- RS1038: Analyzers should not reference Workspaces - suppressed because analyzers and code fixers are in the same assembly -->

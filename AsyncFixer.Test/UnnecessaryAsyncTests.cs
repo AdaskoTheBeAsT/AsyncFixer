@@ -921,7 +921,7 @@ class Program
                 {
                     Sources = { fixtest },
                 },
-            }.RunAsync();
+            }.RunAsync(TestContext.Current.CancellationToken);
         }
 
         /// <summary>
@@ -1648,7 +1648,7 @@ internal class Program
                 {
                     Sources = { fixtest },
                 },
-            }.RunAsync();
+            }.RunAsync(TestContext.Current.CancellationToken);
         }
 
         #region Edge Case Tests - Scenarios where async/await should NOT be removed
